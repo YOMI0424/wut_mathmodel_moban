@@ -1,0 +1,72 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[UTF8]{ctex}
+\usepackage{geometry}
+\usepackage{abstract}
+\geometry{a4paper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+
+%移除页眉页脚
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+
+% 设置字体
+\setCJKmainfont{SimSun}[BoldFont=SimHei,Mapping=latin2]
+\setCJKsansfont{SimHei}
+\setCJKmonofont{SimSun}
+
+% 标题格式
+\title{\zihao{3}\heiti 标题}
+\author{}
+\date{}
+
+% 章节格式
+\usepackage{titlesec}
+\titleformat{\section}
+  {\zihao{4}\heiti\centering}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\zihao{-4}\heiti\raggedright}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+  {\zihao{-4}\heiti\raggedright}{\thesubsubsection}{1em}{}
+
+%摘要格式
+\renewcommand{\abstractnamefont}{\heiti\bfseries\fontsize{16}{18}\selectfont}
+\renewcommand{\abstracttextfont}{\songti\fontsize{12pt}{18}}
+
+% 正文
+\begin{document}
+
+% 第一页
+\maketitle
+\vspace{-2.5cm}
+\begin{abstract}
+\vspace{-0.5cm}
+\zihao{-4}\songti
+摘要内容
+\end{abstract}
+
+\vspace{0cm}
+\noindent%取消
+\textbf{关键词：} 关键词1，关键词2，关键词3
+
+\newpage
+
+% 主要内容
+\section{引言}
+
+这里是正文内容...哈哈哈哈
+
+\section{一级标题}
+\subsection{二级标题}
+\subsubsection{三级标题}
+
+\newpage
+% 参考文献
+\begin{thebibliography}{99}
+\zihao{-4}\songti
+\bibitem{ref1} 作者，书名，出版地：出版社，出版年。
+\bibitem{ref2} 作者，论文名，杂志名，卷期号：出版年，起止页码。
+\bibitem{ref3} 作者，资源标题，网址，访问时间（年月日）。
+\end{thebibliography}
+
+\end{document}
