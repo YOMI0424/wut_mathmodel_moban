@@ -1,5 +1,6 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage[UTF8]{ctex}
+\usepackage{amsmath}
 \usepackage{geometry}
 \usepackage{abstract}
 \usepackage{graphicx}
@@ -8,6 +9,9 @@
 \usepackage{fancyhdr}
 \usepackage{listings}
 \usepackage{xcolor}       % 定义和使用自定义颜色
+\numberwithin{figure}{subsection}
+\numberwithin{figure}{subsection}
+
 \special{dvipdfmx:config z 0} %取消PDF压缩，加快速度，最终版本生成的时候最好把这句话注释掉
 
 \geometry{a4paper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
@@ -97,7 +101,7 @@
 插入图片
 \begin{figure}[ht]%here or top
   \centering
-  \includegraphics[width = 0.55\textwidth]{Miku_Space.jpg}
+  \includegraphics[width = 0.55\textwidth]{figures/Miku_Space.jpg}
   \caption{Miku in Space}
   \label{img:Miku}    
 \end{figure}
@@ -149,7 +153,7 @@
 \end{enumerate}
 \begin{figure}[H]%here or top
   \centering
-  \includegraphics[width = 0.55\textwidth]{Frieren.jpg}
+  \includegraphics[width = 0.55\textwidth]{figures/Frieren.jpg}
   \caption{Frieren}
   \label{img:Frieren}    
 \end{figure}
@@ -171,7 +175,7 @@
 求解结果+图片
 \begin{figure}[H]%here or top
   \centering
-  \includegraphics[width = 0.55\textwidth]{Frieren_Night.jpg}
+  \includegraphics[width = 0.55\textwidth]{figures/Frieren_Night.jpg}
   \caption{FrierenNight}
   \label{img:Frieren_Night}    
 \end{figure}
@@ -189,7 +193,7 @@
 \end{enumerate}
 \begin{figure}[H]%here or top
   \centering
-  \includegraphics[width = 0.55\textwidth]{Miku_Dance.jpg}
+  \includegraphics[width = 0.55\textwidth]{figures/Miku_Dance.jpg}
   \caption{MikuDance}
   \label{img:MikuDance}    
 \end{figure}
@@ -211,7 +215,7 @@
 求解结果+图片
 \begin{figure}[H]%here or top
   \centering
-  \includegraphics[width = 0.55\textwidth]{Makima.png}
+  \includegraphics[width = 0.55\textwidth]{figures/Makima.png}
   \caption{Makima}
   \label{img:Makima}    
 \end{figure}
