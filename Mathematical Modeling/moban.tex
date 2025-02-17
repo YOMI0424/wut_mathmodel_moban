@@ -9,6 +9,7 @@
 \usepackage{fancyhdr}
 \usepackage{listings}
 \usepackage{xcolor}       % 定义和使用自定义颜色
+\usepackage{booktabs}
 \numberwithin{figure}{subsection}
 \numberwithin{figure}{subsection}
 
@@ -131,18 +132,20 @@
 \end{enumerate}
 
 \section{符号说明}
-\vspace{-1em}
+\vspace{-2em}
+
 \begin{table}[H]
-  \centering
-  \label{tab:符号说明} % 表格标签
-  \begin{tabular}{c c c} % 三列，带竖线的表格
-      \hline
-      符号 & 说明 & 单位 \\ \hline
-      $F_e$ & 波浪鼓励力 & $N$ \\ \hline
+  \centering%把表居中
+  \begin{tabular}{ccc}
+  \toprule%第一道横线
+  符号&说明&单位\\
+  \midrule%第二道横线 
+  $F_e$ & 波浪鼓励力 & $N$ \\
+  \bottomrule%第三道横线
   \end{tabular}
 \end{table}
-注：表中未出现的符号及重复的符号以出现处的解释为准
 
+注：表中未出现的符号及重复的符号以出现处的解释为准
 \section{问题一模型的建立与求解}
 \subsection{问题分析}
 问题一包含如下三个子问题：
